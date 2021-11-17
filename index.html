@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class='main'>
+      <nav class='navBar'>
+        <h1>My Portfolio</h1>
+        <div class='navigationMenu'>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's Connect!</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <!-- <img 
+        class='profileImage'
+        src='https://uploads-ssl.webflow.com/60798d9b0b61160814b3d8c3/611e2bb5e961e3667e64d413_WhatsApp%20Image%202021-08-19%20at%203.21.00%20PM.jpeg'/> -->
+        <div class='herosectionDetails'>
+          <h1>Soumya Dash</h1>
+          <h3>Front End Developer</h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>What I Do...</h1>
+        <!-- <p>Some basic details can be added hear regarding what you are realy known for. 
+          What you have done in your past job experience. 
+          Why do  you think you are doing well and more compatible with respect to other users and creators.</p> -->
+          <p>
+            Currently I'm learning Data Structures and Algorithms, Front-End Web Development and Trying my hands on Competitive Programming
+            I'm learning React.JS and till now have done a few basic projects based on HTML, CSS and JavaScript. I'm a 4 ⭐at HackerRank in C language,
+            3 ⭐in C++ and Problem solving and 2⭐at Codechef
+          </p>
+
+      </section>
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeading'>Skills</h1>
+          <img title='HTML' src='./images/html-svgrepo-com.svg'>
+          <img title='CSS' src='./images/css-svgrepo-com.svg'>
+          <img title='Javascript' src='./images/javascript-svgrepo-com.svg'>
+          <img title='jQuery' src='./images/jquery-svgrepo-com.svg'>
+          <img title='React JS' src='./images/react-svgrepo-com.svg'>
+          <img title='Visual Studio Code' src='./images/visual-studio-code-svgrepo-com.svg'>
+          <img title='Github' src='./images/github-svgrepo-com.svg'>
+          <img title='Redux' src='./images/redux-svgrepo-com.svg'>
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects</h1>
+          <div class='projectContainer'>
+            <img src='./images/projects-svgrepo-com.svg'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project.</p>
+            </div>
+          </div>
+          <div class='projectContainer'>
+            <img src='./images/projects-svgrepo-com.svg'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Your message" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
